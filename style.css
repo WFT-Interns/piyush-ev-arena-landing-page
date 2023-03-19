@@ -1,5 +1,34 @@
 *{
-    margin-left:10px;
-    margin-right: 10px;
+    margin-left:5px;
+    margin-right: 5px;
     font-family: Gotham, sans-serif;
+}
+.nav-bar-container{
+    display: flex;
+    position: sticky;
+    height:128px;
+    width: 100%;
+}
+.logo-container {
+    height: 30px;
+    width: 170px;
+    top:0;
+    
+}
+.location-container{
+   
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height:40px;
+}
+
+.location-container img{
+    top:0;
+    height:40px;
+    width:30px;
+}
+.location-service-text .nearest-charger{
+    padding: 0;
+    
 }
