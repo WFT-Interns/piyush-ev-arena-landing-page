@@ -1,34 +1,102 @@
 *{
-    margin-left:5px;
-    margin-right: 5px;
+    
     font-family: Gotham, sans-serif;
 }
+.body{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.nav-bar{
+    top :0;
+    position:fixed;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
 .nav-bar-container{
     display: flex;
-    position: sticky;
-    height:128px;
-    width: 100%;
+  
+  
+    
 }
 .logo-container {
     height: 30px;
     width: 170px;
-    top:0;
     
 }
 .location-container{
    
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     height:40px;
 }
 
 .location-container img{
-    top:0;
-    height:40px;
+
     width:30px;
 }
-.location-service-text .nearest-charger{
-    padding: 0;
+.location-service-text{
+    line-height: 0.1;
+}
+.location-service-text .nearest-charger-text{
+    font-size: small;
+    /* line-height: 0.1; */
+
+}
+.location-service-text .location-text{
+font-weight: 800;
+}
+.navigation-links{
+
+    align-items: center;
+    height:50px;
+}
+.navigation-links ,ul{
+    display: flex;
+}
+.navigation-links ul li{
+    list-style: none;
+   
+}
+.navigation-links ul li a{
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+    font-weight: 500;
     
 }
+.navigation-links ul li  {
+    padding: 30px;;
+}
+.search-icon-container{
+    position: absolute;
+    top:25px;
+    left:97%;
+    justify-items: center;
+}
+.search-icon-container img{
+    height:20px;
+    width: 20px;
+}
+.banner{
+    padding-top: 70px;
+    width:100%;
+    height:100vh;
+}
+.video-container img{
+    width:100%;
+    height:100vh;
+}
+.video-overlay{
+    background: black;
+
+    top:15vh
+}
+
