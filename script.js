@@ -3,7 +3,7 @@ const slides = document.getElementsByClassName("slide");
 const dots = document.getElementsByClassName("dot");
 
 function showSlides() {
-    //iterate thrpugh lenth of slide and hide all
+  //iterate thrpugh lenth of slide and hide all
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
