@@ -3,8 +3,8 @@
     font-family: Gotham, sans-serif;
 }
 .body{
-    margin-left: 5px;
-    margin-right: 10px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
 }
 .nav-bar{
     top :0;
@@ -12,17 +12,17 @@
     overflow-x: scroll;
     overflow-y: hidden;
     background-color: white;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .nav-bar-container{
     display: flex;
+ 
   
-  
-    
 }
 .logo-container {
     height: 30px;
@@ -86,17 +86,56 @@ font-weight: 800;
     width: 20px;
 }
 .banner{
-    padding-top: 70px;
-    width:100%;
+    padding-top: 80px;
+    width:100vw;
     height:100vh;
+    object-fit: contain;
+}
+.video-container{
+    object-fit: cover;
+    overflow:hidden;
 }
 .video-container img{
-    width:100%;
+    position: relative;
+    width:99vw;
     height:100vh;
+    overflow:hidden;
 }
 .video-overlay{
-    background: black;
+   
+    position: absolute;
+    top:75px;
+    height:102vh;
+    color: white;
+    width: 99vw;
+    background: rgba(0, 0, 0, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0.1;
+    
+}
 
-    top:15vh
+.video-overlay h1{
+font-size: 50px;
+
+}
+.video-overlay .and-symbol{
+    color: #47AF71;
+}
+.video-overlay h3{
+   font-size: 30px;
+}
+.video-overlay .why-ev-button{
+    display: flex;
+    width:300px;
+    height: 70px;
+    background: rgba(71, 175, 113, 0.51);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 25px;;
 }
 
