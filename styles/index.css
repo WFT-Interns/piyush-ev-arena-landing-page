@@ -4,9 +4,8 @@
 .body {
   margin: 0;
   padding: 0;
-  /* margin-left: 5px;
-    margin-right: 5px; */
 }
+/*navbar section*/
 .nav-bar {
   top: 0;
   position: fixed;
@@ -45,7 +44,6 @@
 }
 .location-service-text .nearest-charger-text {
   font-size: small;
-  /* line-height: 0.1; */
 }
 .location-service-text .location-text {
   font-weight: 800;
@@ -71,15 +69,7 @@
 .navigation-links ul li {
   padding-left: 25px;
 }
-.navigation-links ul li .active {
-  display: flex;
-  background-color: green;
-  color: #fff;
-  height: 25px;
-  width: 80px;
-  align-items: center;
-  justify-content: center;
-}
+
 .search-icon-container {
   position: absolute;
   top: 25px;
@@ -90,6 +80,8 @@
   height: 20px;
   width: 20px;
 }
+
+/*banner section*/
 .banner {
   padding-top: 80px;
   width: 100vw;
@@ -256,55 +248,4 @@
   position: relative;
   left: 50vw;
   bottom: 10vh;
-}
-
-/*EV FINDER*/
-.finder-section {
-  top: 80px;
-  position: relative;
-}
-
-.vehicle-selector-container {
-  width: 98vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 100px;
-}
-.vehicle-selector-container ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-}
-.vehicle-selector-container ul li {
-  padding: 30px;
-}
-
-.finder-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.finder-container .ev-brand-box {
-  position: absolute;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  height: 30px;
-  width: 80px;
-}
-.finder-container .ev-range-box {
-  position: absolute;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  height: 30px;
-  width: 80px;
-}
-.finder-container .model-year-box {
-  position: absolute;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  height: 30px;
-  width: 80px;
 }
