@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/evfinder.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/evfinder.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>EV Finder</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="nav-bar">
-        <div class="nav-bar-container">
-          <div class="logo-container">
-            <img src="./assets/logo.svg" alt="" />
-          </div>
-          <div class="location-container">
-            <img src="./assets/location-01.svg" alt="" />
-            <div class="location-service-text">
-              <p class="nearest-charger-text">Nearest Charger</p>
-              <p class="location-text">Kathmandu</p>
-            </div>
-          </div>
-          <div class="navigation-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="">EV Finder</a></li>
-              <li><a href="">Compare</a></li>
-              <li><a href="">Browse</a></li>
-            </ul>
-          </div>
-          <div class="search-icon-container">
-            <img src="./assets/Vector.svg" alt="" />
+      <div class="nav-bar-container">
+        <div class="logo-container">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+        <div class="location-container">
+          <img src="./assets/location-01.svg" alt="" />
+          <div class="location-service-text">
+            <p class="nearest-charger-text">Nearest Charger</p>
+            <p class="location-text">Kathmandu</p>
           </div>
         </div>
-      </section>
-    
-</body>
+        <div class="navigation-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">EV Finder</a></li>
+            <li><a href="">Compare</a></li>
+            <li><a href="">Browse</a></li>
+          </ul>
+        </div>
+        <div class="search-icon-container">
+          <img src="./assets/Vector.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="finder-container">
+      <div class="vehicle-selector">
+        <ul>
+          <li><a href="" class="active">Car</a></li>
+          <li><a href="">Bike</a></li>
+          <li><a href="">Scooter</a></li>
+        </ul>
+      </div>
+      <div class="spec-container">
+        <div class="spec-items-container">
+          <div class="buttons-container">
+            <button id="ev-brand" onclick="myFunction()">
+              EV Brand <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <button id="ev-range">EV Range</button>
+            <button id="ev-year">Year</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (e) {
+        if (!e.target.matches("#ev-brand")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+    </script>
+  </body>
 </html>
