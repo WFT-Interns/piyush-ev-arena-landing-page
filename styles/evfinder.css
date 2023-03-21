@@ -1,0 +1,139 @@
+* {
+  font-family: Gotham, sans-serif;
+}
+.body {
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+}
+/*navbar section*/
+.nav-bar {
+  top: 0;
+  position: fixed;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: white;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container {
+  height: 25px;
+  width: 170px;
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 40px;
+}
+
+.location-container img {
+  width: 30px;
+}
+.location-service-text {
+  line-height: 0.1;
+}
+.location-service-text .nearest-charger-text {
+  font-size: small;
+}
+.location-service-text .location-text {
+  font-weight: 800;
+}
+.navigation-links {
+  align-items: center;
+  justify-items: center;
+  height: 50px;
+}
+.navigation-links ul {
+  display: flex;
+}
+.navigation-links ul li {
+  list-style: none;
+}
+.navigation-links ul li a {
+  text-decoration: none;
+  color: #000;
+  align-items: center;
+  font-weight: 500;
+}
+
+.navigation-links ul li {
+  padding-left: 25px;
+}
+
+.search-icon-container {
+  position: absolute;
+  top: 25px;
+  left: 97%;
+  justify-items: center;
+}
+.search-icon-container img {
+  height: 20px;
+  width: 20px;
+}
+
+/*Finder Section*/
+
+.vehicle-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 25vh;
+}
+.vehicle-selector ul {
+  display: flex;
+  justify-content: center;
+}
+.vehicle-selector ul li {
+  list-style: none;
+  padding-right: 60px;
+}
+.finder-container {
+  top: 30vh;
+}
+.finder-container .vehicle-selector a {
+  text-decoration: none;
+  color: black;
+}
+.vehicle-selector .active {
+  background: rgb(182, 182, 182);
+}
+.spec-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.spec-items-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 1106px;
+  height: 233px;
+  top: 200px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+.buttons-container {
+  display: flex;
+}
+.buttons-container button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 261px;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
