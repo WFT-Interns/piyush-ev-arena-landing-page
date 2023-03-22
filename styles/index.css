@@ -140,8 +140,10 @@
   width: 99vw;
   position: sticky;
 }
-.selector ul li {
+.selector ul {
   display: flex;
+}
+.selector ul li {
   list-style: none;
   padding-top: 0;
   padding-right: 50px;
