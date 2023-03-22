@@ -53,30 +53,60 @@
               EV Brand <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content" id="myDropdown">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#">Tesla</a>
+              <a href="#">Porsche</a>
+              <a href="#">Audi</a>
             </div>
             <button id="ev-range">EV Range</button>
             <button id="ev-year">Year</button>
           </div>
+          <div class="price-range-container">
+            <span>Price Range</span>
+            <div class="range_container">
+              <div class="sliders_control">
+                <input
+                  id="fromSlider"
+                  type="range"
+                  value="10"
+                  min="0"
+                  max="100"
+                />
+                <input
+                  id="toSlider"
+                  type="range"
+                  value="30"
+                  min="0"
+                  max="100"
+                />
+              </div>
+              <div class="form_control">
+                <div class="form_control_container">
+                  <input
+                    class="form_control_container__time__input"
+                    type="number"
+                    id="fromInput"
+                    value="10"
+                    min="0"
+                    max="100"
+                  />
+                </div>
+                <div class="form_control_container">
+                  <input
+                    class="form_control_container__time__input"
+                    type="number"
+                    id="toInput"
+                    value="30"
+                    min="0"
+                    max="100"
+                  />
+                </div>
+              </div>
+            </div>
+            <button id="search-ev">Search EV</button>
+          </div>
         </div>
       </div>
     </section>
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (e) {
-        if (!e.target.matches("#ev-brand")) {
-          var myDropdown = document.getElementById("myDropdown");
-          if (myDropdown.classList.contains("show")) {
-            myDropdown.classList.remove("show");
-          }
-        }
-      };
-    </script>
+    <script src="./scripts/ev-finder.js"></script>
   </body>
 </html>
